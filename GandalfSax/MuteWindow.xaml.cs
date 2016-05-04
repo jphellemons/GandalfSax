@@ -1,5 +1,4 @@
-﻿using Microsoft.Win32;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -11,21 +10,18 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 using System.Windows.Shapes;
 
 namespace GandalfSax
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Interaction logic for GifWindow.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class MuteWindow : Window
     {
-        public MainWindow()
+        public MuteWindow()
         {
             InitializeComponent();
-            RegistryKey registryKey = Registry.CurrentUser.OpenSubKey("SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Run", true);        
-            registryKey.SetValue("GandalfSax", System.Reflection.Assembly.GetExecutingAssembly().Location);
         }
 
         private void me_MediaEnded(object sender, RoutedEventArgs e)

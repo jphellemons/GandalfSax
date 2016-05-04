@@ -1,11 +1,11 @@
-﻿<Window x:Class="GandalfSax.MainWindow"
+﻿<Window x:Class="GandalfSax.MuteWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:GandalfSax"
         mc:Ignorable="d"
-        Title="Gandalf Sax" Height="350" Width="525" WindowStyle="None" ResizeMode="NoResize"  
+        Title="MuteWindow" Height="300" Width="300" Background="Black" WindowStyle="None" ResizeMode="NoResize"  
         WindowStartupLocation="CenterScreen" WindowState="Maximized">
     <Grid>
         <MediaElement Source="Assets/gandalfsax.mp4" 
@@ -13,7 +13,7 @@
                       MediaEnded="me_MediaEnded" 
                       Name="me" 
                       VerticalAlignment="Center" 
-                      Volume="1">
+                      Volume="0">
         </MediaElement>
     </Grid>
 </Window>
