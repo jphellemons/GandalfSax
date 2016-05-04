@@ -28,8 +28,9 @@ namespace GandalfSax
                     else
                         window = new MuteWindow();
 
-                    window.Left   = s.WorkingArea.Left;
-                    window.Top    = s.WorkingArea.Top;
+                    window.WindowStartupLocation = WindowStartupLocation.Manual;
+                    window.Left                  = s.WorkingArea.Left;
+                    window.Top                   = s.WorkingArea.Top;
                     window.Show();
                     window.WindowState = WindowState.Maximized;
                 }

@@ -5,8 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:GandalfSax"
         mc:Ignorable="d"
-        Title="MuteWindow" Height="300" Width="300" Background="Black" WindowStyle="None" ResizeMode="NoResize"  
-        WindowStartupLocation="CenterScreen" WindowState="Maximized">
+        Title="MuteWindow" Height="300" Width="300" Background="Black" WindowStyle="None" ResizeMode="NoResize">
     <Grid>
         <MediaElement Source="Assets/gandalfsax.mp4" 
                       Stretch="UniformToFill" 
