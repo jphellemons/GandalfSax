@@ -22,11 +22,9 @@ namespace GandalfSax
             {
                 foreach (Screen s in Screen.AllScreens)
                 {
-                    Window window = null;
-                    if (s.Primary)
-                        window = new MainWindow();
-                    else
-                        window = new MuteWindow();
+                    MainWindow window = new MainWindow();
+                    if (!s.Primary)
+                        window.me.Volume = 0; // only primary will have volume on
 
                     window.WindowStartupLocation = WindowStartupLocation.Manual;
                     window.Left                  = s.WorkingArea.Left;

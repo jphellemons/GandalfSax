@@ -10,7 +10,7 @@
         <MediaElement Source="Assets/gandalfsax.mp4" 
                       Stretch="UniformToFill" 
                       MediaEnded="me_MediaEnded" 
-                      Name="me" 
+                      x:Name="me" 
                       VerticalAlignment="Center" 
                       Volume="1">
         </MediaElement>
